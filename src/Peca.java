@@ -7,9 +7,4 @@ public abstract class Peca {
     public abstract void teste();
     public abstract char getTipo();
 
-    public boolean isNull() {
-        if (getTipo() == '\u0000')
-            return true;
-        return false;
-    }
 }
