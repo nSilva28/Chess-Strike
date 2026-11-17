@@ -27,8 +27,8 @@ public class Peao extends Peca {
         return this.tipo;
     }
 
-    public String mover() {
-        char posiX = (char)(this.posX+65);
+    public String mover(String destino) {
+        char posiX = (char)(this.posX+65); // o que tá aqui ainda não é o mover implementado.
         char posiY = (char)(this.posY+65);
         String posiCompleta = "" + posiX;
         posiCompleta += posiY;
@@ -36,14 +36,15 @@ public class Peao extends Peca {
     }
 
     public void teste() {
-        char posiX = (char)(this.posX+65);
+        // teste pra checar se as posições das peças estão sendo guardadas e impressas/retornadas corretamente.
         char posiY = (char)(this.posY+49);
+        char posiX = (char)(this.posX+65);
         String posiCompleta = "" + posiX;
         posiCompleta += posiY;
         System.out.println(posiCompleta);
     }
 
-    public String moverAtaque() {
-        return "qqmerda";
+    public String moverAtaque(String destino) {
+        return "";
     }
 }
