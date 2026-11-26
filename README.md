@@ -1,2 +1,2 @@
-# XadrezTP
+# Chess-Strike
 
